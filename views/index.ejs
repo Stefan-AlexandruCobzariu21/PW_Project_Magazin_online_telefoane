@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>Acasă</h2>
+    <main>
+        <h2>Bine ai venit, utilizator: <%= utilizator1 %>!</h2>
+        <p>Autentificat ca: <%= user1 %></p>
+        <p>Link către pagina de autentificare: </p>
+        <a href='/autentificare'>Autentificare</a>
+        <a href=''>
+        <p>
+        <% if (user1) { %>
+            <div id="container">
+            <form action="/logout" method="post">
+                <button type="submit">Deconectare</button>
+            </form><br>
+            <form action="/CreareBd" method="get">
+                <button type="submit">Creare BD</button>
+            </form><br>
+            <form action="/IncarcareBd" method="get">
+                <button type="submit">Încărcare BD</button>
+            </form><br>    
+            <form action="/VizualizareCos" method="get">
+                <button type="submit">Vizualizare Cos Cumparaturi</button>
+            </form><br>     
+            </div>   
+            <br>
+        <% } %>
+        
+        <form action="/AfisareProduse" method="get">
+            <button type="submit">Afisare tabel produse</button>
+        </form><br>     
+
+        <fieldset>
+            <h4>Produse în stoc</h4>
+            <br/>
+            <table class="tabel_produse" border="1">
+                
+                <tr>
+                    <th>Id</th>
+                    <th>Model telefon</th>
+                    <th>Preț</th>
+                </tr>
+                <% if(produse){ %>            
+                    <% for (var i = 0; i < produse.length; i++){ %>
+                        <tr><td><%= produse[i].id %></td>
+                            <td><%= produse[i].nume %></td>
+                            <td><%= produse[i].pret %></td>
+                            <% if (user1)  { %>  
+                                <td>
+                                    <!--Prin metoda POST puteți face câte un form pentru fiecare buton cu atributul action egal cu/adaugare_cos și cu elementul <input type="hidden" name="id" value="idProdus">.    -->
+                                <form action="/adaugare_cos" method="post">
+                                    <input type="hidden" name="Produsid" value="<%= produse[i].id %>">
+                                    <button type="submit">Adaugă în coș</button>
+                                </form>
+                                </td>
+                           <% } %>  
+                        </tr>
+                    <% } %>
+                <% } %>
+            </table>
+        <br/>  
+        </fieldset>
+        </p>
+    </main>
+</body>  
+</html>

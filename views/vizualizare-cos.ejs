@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vizualizare Coș</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>Coșul de cumpărături</h2>
+    <main>
+            <ul class="shopping-list">
+        <% if (user1) { %>    
+                <% cos.forEach((item, index) => { %>
+                    <li ><%= item %></li>
+                <% }); %>
+        <% } %>      
+                </ul>
+    </main>
+</body>
+</html>

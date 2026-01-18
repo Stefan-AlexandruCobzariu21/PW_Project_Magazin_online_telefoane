@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Autentificare</title>
+    <meta charset="UTF-8">
+</head>
+<h1>Autentificare</h1>
+    <body>
+        <main>
+            <form action="verificare-autentificare" method="post">
+                <fieldset>
+                    <label for="fusername">Username:</label><br>
+                    <input type="text" id="fusername" name="fuser" required ><br>
+                    <label for="fpass">Password::</label><br>
+                    <input type="password" id="fpass" name="fp" required><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+                <p style="color: red "> <%= eroare %></p>
+            </main>
+    </body>  
+</html>

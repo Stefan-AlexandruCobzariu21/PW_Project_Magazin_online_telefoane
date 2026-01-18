@@ -1,0 +1,52 @@
+[
+    {
+        "intrebare": "Culoarea dorită pentru telefon:",
+        "variante": ["albastru", "negru", "verde"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Capacitatea de stocare dorită:",
+        "variante": ["64Gb", "128Gb", "256Gb", "512Gb"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Marca",
+        "variante": ["Iphone", "Samsung", "Xiaomi", "OnePlus"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Memoria RAM dorită pentru telefon:",
+        "variante": ["4", "6", "8"],
+        "corect": 2
+    },
+    {
+        "intrebare": "Bugetul disponibil pentru achiziționarea telefonului:",
+        "variante": ["sub 1000 RON", "1000 - 2000 RON", "2000 - 3000 RON", "peste 3000 RON"],
+        "corect": 2
+    },
+    {
+        "intrebare": "Funcții suplimentare dorite:",
+        "variante": ["Cameră foto performantă", "Baterie cu durată lungă de viață", "Rezistență la apă", "Încărcare wireless"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Sistemul de operare preferat:",
+        "variante": ["iOS", "Android", "Nu contează"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Dimensiunea ecranului dorită:",
+        "variante": ["sub 5 inch", "5 - 5.5 inch", "5.5 - 6 inch", "peste 6 inch"],
+        "corect": 3
+    },
+    {
+        "intrebare": "Tipul de conectivitate preferat:",
+        "variante": ["4G", "5G", "Nu contează"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Importanța actualizărilor software:",
+        "variante": ["Foarte importantă", "Importantă", "Nu contează"],
+        "corect": 0
+    }
+]
